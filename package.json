@@ -1,0 +1,28 @@
+{
+  "name": "cks-ticketing",
+  "version": "1.0.0",
+  "description": "CKS Ticketing - free movie seat reservations for the Center for Kapampangan Studies theater. Express API + Postgres (Neon) + email, deployable on Vercel.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "test": "node --test tests/api.test.js",
+    "vercel-build": "node scripts/prepare-build.js"
+  },
+  "dependencies": {
+    "@neondatabase/serverless": "^1.2.0",
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.4.5",
+    "express": "4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "nodemailer": "^6.9.14",
+    "pg": "^8.11.5",
+    "qrcode": "^1.5.4",
+    "ws": "^8.22.0"
+  },
+  "engines": {
+    "node": "20.x"
+  },
+  "license": "MIT"
+}
